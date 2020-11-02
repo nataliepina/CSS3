@@ -1,0 +1,27 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+
+   html, body {
+       height: 100%;
+       margin: 0;
+   }
+
+   .page-content {
+       min-height: 100%;
+
+        /* negative measurement should match height */
+       margin-bottom: -120px;
+   }
+
+   .page-content::after {
+       content: "";
+       display: block;
+   }
+
+   /* you always need to know the height for a sticky footer */
+   footer, .page-content::after {
+       height: 120px;
+   }
